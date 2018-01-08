@@ -91,6 +91,7 @@ struct sensor_DATA {
 
 /////////////
 sensor_DATA getSensorData();
+config_DATA getSensorConfig()
 byte MeasureSoilMoisture();
 byte GetLimit();
 bool GetAutomatic();
@@ -98,6 +99,7 @@ unsigned int CalculateSleeptime();
 void PwrDown(int seconds);
 bool SendSensorData(sensor_DATA sdat);
 void SetConfig(config_DATA cfg);
+bool SendSensorConfig(config_DATA cfgdat) 
 void StartWatering();
 //////////
 
